@@ -1,0 +1,29 @@
+# 运行时数据：Google 同步的原始表格、看板快照、录入、日志与运营令牌
+# 都不入库——里面是真实业务数据与凭据。
+data/*
+!data/.gitkeep
+
+# 部署配置：真实团队名单、花名映射、汇率与数据源链接
+config.local.py
+
+# 截图含真实运营数据，不入库
+docs/*.png
+
+# 日志与临时产物
+*.log
+*.tmp
+~$*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# 编辑器与系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

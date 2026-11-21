@@ -1,0 +1,2 @@
+# 运行时数据目录（Google 同步结果、看板快照、手工录入、日志、运营令牌）
+# 由 build_dashboard.py / sync_google.py 自动写入，不入版本库。

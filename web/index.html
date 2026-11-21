@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>直播团队看板 · 2026年11月</title>
+<script>(function(){var p=location.pathname;if(p.length>1&&p.slice(-1)!=="/"&&p.indexOf(".")<0){location.replace(p+"/"+location.search+location.hash);}})();</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <div class="brand"><span class="dot"></span><span id="brandName">直播团队看板</span><small id="brandSub">NOV 2026</small></div>
+    <nav class="nav" id="nav">
+      <a href="#/" data-v="overview" data-k="总览">总览</a>
+      <a href="#/entry" data-v="entry" data-k="录入">录入</a>
+      <a href="#/members" data-v="members" data-k="成员榜">成员榜</a>
+      <a href="#/diagnose" data-v="diagnose" data-k="诊断">诊断</a>
+      <a href="#/reconcile" data-v="reconcile" data-k="口径对账">口径对账</a>
+    </nav>
+    <div class="top-right">
+      <div class="seg-group" id="lang">
+        <button class="seg on" data-lang="zh">中文</button>
+        <button class="seg" data-lang="th">ไทย</button>
+      </div>
+      <button class="icon-btn" id="btnTheme" title="主题">☾</button>
+      <span id="genAt" class="sub"></span>
+      <button class="btn" id="btnRebuild">↻ <span id="btnRebuildTx">重建数据</span></button>
+    </div>
+  </div>
+</header>
+<main class="wrap" id="app"><div class="empty">加载中…</div></main>
+
+<div class="mask" id="mask"></div>
+<aside class="drawer" id="drawer"></aside>
+<div class="toast" id="toast"></div>
+
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+<script src="export.js"></script>
+<script src="views2.js"></script>
+<script src="views3.js"></script>
+<script src="diagnose.js"></script>
+<script src="entry.js"></script>
+</body>
+</html>
